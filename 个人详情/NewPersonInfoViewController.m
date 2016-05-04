@@ -133,7 +133,7 @@
             _currentController = targetViewController;
         }];
         
-        if (-offset - 44 > XFHeadViewH - 20) {
+        if (-offset + 20 > XFTabBarH + XFHeadViewMinH) {
             targetViewController.tableView.contentOffset = CGPointMake(0, offset);
         }
         else{
